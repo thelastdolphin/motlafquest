@@ -5,7 +5,7 @@ Player::Player(){
     std::string className = "Player";
     BasicGameLog->Lcreate(className);
     delete BasicGameLog;
-};
+}
 
 Player::~Player(){
     Log * BuildCastleLog = new Log;

@@ -1,20 +1,31 @@
 #include "Log.h"
+using namespace std;
 
-// переписать лог так, чтобы файл открывался один раз,
-// и туда записывалось всё по порядку.
+// писать в лог только при новом запуске файла, старые записи убирать.
 
-void Log::Lcreate(std::string className){ // записывает в файл создание экземпляра класса игрока, время и вид
-    /*std::ofstream GameLog("./gamelog");
+void Log::Lcreate(std::string className){
+    ofstream GameLog("./gamelog", ios_base::out | ios_base::app);
     if (!GameLog.is_open())
        std::cerr << "Can't open log!\n";
     else
-       GameLog */ std::cout << "Created" << className << "\n";
-};
+       GameLog << "Created " << className << Log::currentTime() << "\n";
+}
 
 void Log::Ldestroy(std::string className) {
-    /*std::ofstream GameLog("./gamelog");
+    ofstream GameLog("./gamelog", ios_base::out | ios_base::app);
     if (!GameLog.is_open())
        std::cerr << "Can't open log!\n";
     else
-       GameLog */ std::cout << "Destroyed!" << className << "\n";
-};
+       GameLog << "Destroyed! " << className << Log::currentTime() << "\n";
+}
+
+
+
+char * Log::currentTime() {
+    time_t rawTime;
+    struct tm * curTime;
+
+    time(&rawTime);
+    curTime =localtime(&rawTime);
+    return asctime(curTime);
+}
