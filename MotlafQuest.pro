@@ -6,7 +6,8 @@ CONFIG -= qt
 SOURCES += main.cpp \
     Castle.cpp \
     Log.cpp \
-    Player.cpp
+    Player.cpp \
+    Input.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -14,7 +15,8 @@ qtcAddDeployment()
 HEADERS += \
     Castle.h \
     Log.h \
-    Player.h
+    Player.h \
+    Input.h
 
 DISTFILES +=
 

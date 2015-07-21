@@ -9,7 +9,7 @@ Player();
 
 ~Player();
 
-
+private:
 
 };
 
