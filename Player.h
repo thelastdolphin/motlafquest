@@ -10,7 +10,7 @@ Player();
 ~Player();
 
 private:
-
+std::string Type = "";
 };
 
 
