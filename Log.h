@@ -8,8 +8,8 @@
 
 class Log {
 public:
-    void Lcreate(std::string className);
-    void Ldestroy(std::string className);
+    void Lcreate(std::string ClassName);
+    void Ldestroy(std::string ClassName);
 private:
     char * currentTime();
 };

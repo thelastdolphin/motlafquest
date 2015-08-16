@@ -2,15 +2,15 @@
 
 Castle::Castle(){
     Log * BuildCastleLog = new Log;
-    std::string className = "Castle";
-    BuildCastleLog->Lcreate(className);
+    std::string ClassName = "Castle";
+    BuildCastleLog->Lcreate(ClassName);
     delete BuildCastleLog;
 }
 
 Castle::~Castle(){
-    Log * BuildCastleLog = new Log;
-    std::string className = "Castle";
-    BuildCastleLog->Ldestroy(className);
-    delete BuildCastleLog;
+    Log * DestroyCastleLog = new Log;
+    std::string ClassName = "Castle";
+    DestroyCastleLog->Ldestroy(ClassName);
+    delete DestroyCastleLog;
 }
 

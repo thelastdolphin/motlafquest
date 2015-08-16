@@ -13,5 +13,4 @@ std::string Input::inputPlayerClass(Player MainPlayer){
     std::cin >> PlayerClass;
     return PlayerClass;
 }
-
 // написать функцию в класс Output для вывода сообщений вида "Please enter .."

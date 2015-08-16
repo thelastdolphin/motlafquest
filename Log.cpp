@@ -3,31 +3,31 @@ using namespace std;
 
 // писать в лог только при новом запуске файла, старые записи убирать.
 
-void Log::Lcreate(std::string className){
-    std::string LogAddress = "./Logs/" + className + ".log";
+void Log::Lcreate(std::string ClassName){
+    std::string LogAddress = "Logs/" + ClassName + ".log";
     ofstream GameLog(LogAddress.c_str(), ios_base::out | ios_base::app);
     if (!GameLog.is_open())
        std::cerr << "Can't open log!\n";
     else
-       GameLog << "Created " << className << "\n" << Log::currentTime() << "\n";
+       GameLog << "Created " << ClassName << "\n" << Log::currentTime() << "\n";
 }
 
-void Log::Ldestroy(std::string className) {
-    std::string LogAddress = "./Logs/" + className + ".log";
+void Log::Ldestroy(std::string ClassName) {
+    std::string LogAddress = "Logs/" + ClassName + ".log";
     ofstream GameLog(LogAddress.c_str(), ios_base::out | ios_base::app);
     if (!GameLog.is_open())
        std::cerr << "Can't open log!\n";
     else
-       GameLog << "Destroyed! " << className << "\n" << Log::currentTime() << "\n";
+       GameLog << "Destroyed! " << ClassName << "\n" << Log::currentTime() << "\n";
 }
 
 
 
 char * Log::currentTime() {
-    time_t rawTime;
-    struct tm * curTime;
+    time_t RawTime;
+    struct tm * CurTime;
 
-    time(&rawTime);
-    curTime = localtime(&rawTime);
-    return asctime(curTime);
+    time(&RawTime);
+    CurTime = localtime(&RawTime);
+    return asctime(CurTime);
 }

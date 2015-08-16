@@ -1,9 +1,6 @@
 #ifndef INPUT
 #define INPUT
-#include <iostream>
-#include <fstream>
-#include <string>
-
+#include "Player.h"
 class Input{
     Input(){}
     ~Input(){}

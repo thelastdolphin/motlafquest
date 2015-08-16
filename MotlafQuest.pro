@@ -7,7 +7,9 @@ SOURCES += main.cpp \
     Castle.cpp \
     Log.cpp \
     Player.cpp \
-    Input.cpp
+    Input.cpp \
+    Output.cpp \
+    QueryHandler.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -16,7 +18,9 @@ HEADERS += \
     Castle.h \
     Log.h \
     Player.h \
-    Input.h
+    Input.h \
+    Output.h \
+    QueryHandler.h
 
 DISTFILES +=
 

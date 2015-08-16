@@ -1,15 +1,15 @@
 #include "Player.h"
 
 Player::Player(){
-    Log * BasicGameLog = new Log;
+    Log * CreatePlayerLog = new Log;
     std::string className = "Player";
-    BasicGameLog->Lcreate(className);
-    delete BasicGameLog;
+    CreatePlayerLog->Lcreate(className);
+    delete CreatePlayerLog;
 }
 
 Player::~Player(){
-    Log * BuildCastleLog = new Log;
+    Log * DestroyPlayerLog = new Log;
     std::string className = "Player";
-    BuildCastleLog->Ldestroy(className);
-    delete BuildCastleLog;
+    DestroyPlayerLog->Ldestroy(className);
+    delete DestroyPlayerLog;
 }

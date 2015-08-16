@@ -1,14 +1,24 @@
-#include <iostream>
 #include "Player.h"
 #include "Castle.h"
-int main(void)
-{
+#include "Output.h"
+#include "QueryHandler.h"
 
+int main(void) {
+
+    QueryHandler * MainGame = new QueryHandler;
     Player * Motlaf = new Player;
     Castle * Sorrow = new Castle;
-    std::cout << "MOTLAF QUEST\n" << std::endl;
+    OutputSys * Out = new OutputSys;
+    QueryHandler * QH = new QueryHandler;
+
+    QH->startMainMenuScript();
+    //Out->out_MainMenu();
+
+    delete QH;
+    delete Out;
     delete Sorrow;
     delete Motlaf;
-    return 0;
+    delete MainGame;
+return 0;
 }
 
