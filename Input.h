@@ -10,6 +10,7 @@ public:
     //std::string inputGetMainEnemyName();
     //std::string inputGetPlayerClass(Player MainPlayer);
     static int inputGetOk(); // возвращает ноль, если строка правильна
+    static unsigned int inputGetAnswer();
 };
 #endif // INPUT
 

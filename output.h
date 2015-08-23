@@ -11,7 +11,7 @@ public:
 
     static void out_MainMenu();
 
-private:
+protected:
     static const std::string MotlafQuest;
     static std::string out_newGame();
     static std::string out_saveGame();

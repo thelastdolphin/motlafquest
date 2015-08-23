@@ -15,6 +15,12 @@ int Input::inputGetOk() { // temp
     return resultOfCompare;
 }
 
+unsigned int Input::inputGetAnswer() { // temp int version
+    unsigned int chosenVariant;
+    std::cin >> chosenVariant;
+    return chosenVariant;
+}
+
 /*std::string Input::inputGetMainEnemyName(){
     std::cin >> Opponent;
     return Opponent;

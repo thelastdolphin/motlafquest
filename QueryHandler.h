@@ -4,7 +4,7 @@
 #include "Input.h"
 #include "Output.h"
 
-class QueryHandler {
+class QueryHandler : public OutputSys, public Input {
 public:
     QueryHandler();  // TEMP
     ~QueryHandler();
