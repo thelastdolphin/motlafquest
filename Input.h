@@ -1,12 +1,15 @@
 #ifndef INPUT
 #define INPUT
 #include "Player.h"
+#include "Output.h"
 class Input{
-    Input(){}
-    ~Input(){}
-
-    std::string inputMainEnemyName();
-    std::string inputPlayerClass(Player MainPlayer);
+public:
+    Input();
+    ~Input();
+//private:
+    //std::string inputGetMainEnemyName();
+    //std::string inputGetPlayerClass(Player MainPlayer);
+    static int inputGetOk(); // возвращает ноль, если строка правильна
 };
 #endif // INPUT
 

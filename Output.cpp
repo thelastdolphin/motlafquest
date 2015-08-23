@@ -46,7 +46,8 @@ std::string OutputSys::out_pleaseEnter(){
 
 void OutputSys::out_MainMenu() {
     std::string MainMenu = "Main Menu";
-    std::cout << "Motlaf Quest" << std::endl //OutputSys::MotlafQuest << std::endl
+    std::string MotlafQuest = "Motlaf Quest";
+    std::cout << MotlafQuest << std::endl
               << MainMenu << std::endl
               << out_newGame() << std::endl
               << out_loadGame() << std::endl

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <algorithm>
 class OutputSys{
 public:
     OutputSys();
@@ -11,7 +12,7 @@ public:
     static void out_MainMenu();
 
 private:
-    //static const std::string MotlafQuest = "Motlaf Quest 0.1";
+    static const std::string MotlafQuest;
     static std::string out_newGame();
     static std::string out_saveGame();
     static std::string out_loadGame();
