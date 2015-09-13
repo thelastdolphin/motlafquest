@@ -7,7 +7,7 @@
 int main(void) {
 
     QueryHandler * MainGame = new QueryHandler;
-    Player * Motlaf = new Player;
+    Player * Motlaf = Player::Instance();
     Castle * Sorrow = new Castle;
     Input * InEx = new Input;
     OutputSys * Out = new OutputSys;

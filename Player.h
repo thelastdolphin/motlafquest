@@ -5,12 +5,16 @@
 class Player {
 
 public:
-Player();
+static Player* Instance();
 
 ~Player();
 
 private:
-//std::string Type = "";
+static Player* _instance;
+
+protected:
+    Player();
+
 };
 
 
