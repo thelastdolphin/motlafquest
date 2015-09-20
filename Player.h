@@ -7,7 +7,7 @@ class Player {
 public:
 static Player* Instance();
 
-~Player();
+virtual ~Player();
 
 private:
 static Player* _instance;

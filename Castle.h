@@ -6,7 +6,7 @@
 class Castle {
 public:
   Castle();
-  ~Castle();
+  virtual ~Castle();
 };
 
 #endif

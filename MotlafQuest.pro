@@ -20,7 +20,8 @@ HEADERS += \
     Player.h \
     Input.h \
     Output.h \
-    QueryHandler.h
+    QueryHandler.h \
+    agreements.h
 
 DISTFILES +=
 

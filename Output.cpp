@@ -35,10 +35,25 @@ std::string OutputSys::out_exitGame(){
     return ExitGame;
 }
 
-std::string OutputSys::out_pleaseEnter(){
+void OutputSys::out_pleaseEnter(char chosenVariant){
     std::string PleaseEnter = "Please, enter ";
-    return PleaseEnter;
+    std::string PlayerClass = "player class: ";
+    std::string OpponentName = "name of your bitter enemy: ";
+
+    switch (chosenVariant) {
+        case 'p':
+            std::cout << PleaseEnter << PlayerClass << std::endl;
+            break;
+        case 'e':
+            std::cout << PleaseEnter << OpponentName << std::endl;
+            break;
+        default:
+            std::cerr << "That was an error. Sorry about that, try again.";
+            break;
+     }
 }
+
+//std::string OutputSys::out_
 
 // END
 

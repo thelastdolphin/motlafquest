@@ -7,21 +7,21 @@
 int main(void) {
 
     QueryHandler * MainGame = new QueryHandler;
-    Player * Motlaf = Player::Instance();
-    Castle * Sorrow = new Castle;
+    //Player * Motlaf = Player::Instance();
+    //Castle * Sorrow = new Castle;
     Input * InEx = new Input;
     OutputSys * Out = new OutputSys;
-    QueryHandler * QH = new QueryHandler;
+    //QueryHandler * QH = new QueryHandler;
 
 
-    QH->startMainMenuScript();
+    MainGame->startMainMenuScript();
     std::cout << InEx->inputGetOk();
 
-    delete QH;
+    //delete QH;
     delete Out;
     delete InEx;
-    delete Sorrow;
-    delete Motlaf;
+    //delete Sorrow;
+    //delete Motlaf;
     delete MainGame;
 return 0;
 }

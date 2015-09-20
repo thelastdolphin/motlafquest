@@ -5,7 +5,7 @@
 class Input{
 public:
     Input();
-    ~Input();
+    virtual ~Input();
 //private:
     //std::string inputGetMainEnemyName();
     //std::string inputGetPlayerClass(Player MainPlayer);

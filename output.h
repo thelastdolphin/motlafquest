@@ -6,7 +6,7 @@
 #include <algorithm>
 class OutputSys{
 public:
-    OutputSys();
+     OutputSys();
     ~OutputSys();
 
     static void out_MainMenu();
@@ -18,6 +18,6 @@ protected:
     static std::string out_loadGame();
     static std::string out_showShortens();
     static std::string out_exitGame();
-    static std::string out_pleaseEnter();
+    static void out_pleaseEnter(char chosenVariant);
 };
 #endif
