@@ -9,7 +9,8 @@ SOURCES += main.cpp \
     Player.cpp \
     Input.cpp \
     Output.cpp \
-    QueryHandler.cpp
+    QueryHandler.cpp \
+    warrior.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -21,7 +22,8 @@ HEADERS += \
     Input.h \
     Output.h \
     QueryHandler.h \
-    agreements.h
+    agreements.h \
+    warrior.h
 
 DISTFILES +=
 

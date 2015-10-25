@@ -11,7 +11,6 @@ void QueryHandler::startMainMenuScript(){
     OutputSys::out_MainMenu();
     switch(Input::inputGetAnswer()){ // заменить вывод строк на методы QueryHandler ("скрипты")
     case 1:
-
         startNewGameScript();
         break;
     case 2:
@@ -32,4 +31,8 @@ void QueryHandler::startMainMenuScript(){
 void QueryHandler::startNewGameScript(){
     std::cout << "Starting New Game " << std::endl;
     OutputSys::out_pleaseEnter('p');
+    // input
+    OutputSys::out_pleaseEnter('e');
+    // input
 }
+
