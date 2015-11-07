@@ -12,6 +12,6 @@ public:
     void startNewGameScript();
     void loadOldGameScript();
     void pauseMenuScript();
-    void exitGameScript();
+    void exitGameScript(void);
 };
 #endif

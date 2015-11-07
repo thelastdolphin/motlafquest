@@ -1,10 +1,18 @@
 #include "QueryHandler.h"
+#include "Player.h"
+#include "warrior.h"
 
 QueryHandler::QueryHandler(){
 
 }
 QueryHandler::~QueryHandler(){
 
+}
+
+
+void QueryHandler::exitGameScript(void){
+    std::cout << "Exiting " << std::endl;
+    std::exit(0);
 }
 
 void QueryHandler::startMainMenuScript(){
@@ -20,8 +28,7 @@ void QueryHandler::startMainMenuScript(){
         std::cout << "Help " << std::endl;
         break;
     case 4:
-        std::cout << "Exiting ";
-        std::exit(0);
+        exitGameScript();
     default:
         std::cerr << "Can't understand you ";
     }
@@ -31,8 +38,14 @@ void QueryHandler::startMainMenuScript(){
 void QueryHandler::startNewGameScript(){
     std::cout << "Starting New Game " << std::endl;
     OutputSys::out_pleaseEnter('p');
+    //KingBuilder::BuildTargetClass();
+    //OutputSys::out_pleaseEnter('e');
     // input
-    OutputSys::out_pleaseEnter('e');
-    // input
+    Create create;
+        create.playerBuilder(new KingBuilder);
+        create.constructPlayer();
+
+        Player Motlaf = create.getPlayer();
+        Motlaf.open();
 }
 
