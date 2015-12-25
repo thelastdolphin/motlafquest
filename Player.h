@@ -31,9 +31,9 @@ class PlayerBuilder {
 public:
     const Player& player();
 
-    virtual void buildStrength()=0;
-    virtual void buildAgility()=0;
-    virtual void buildMind()=0;
+    virtual void buildStrength(int)=0;
+    virtual void buildAgility(int)=0;
+    virtual void buildMind(int)=0;
 
 protected:
     Player player_;
@@ -51,7 +51,7 @@ public:
 
     const Player& getPlayer();
 
-    void constructPlayer();
+    void constructPlayer(int str, int agi, int min);
 
 private:
     PlayerBuilder* playerBuilder_;

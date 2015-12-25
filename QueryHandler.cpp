@@ -37,13 +37,26 @@ void QueryHandler::startMainMenuScript(){
 
 void QueryHandler::startNewGameScript(){
     std::cout << "Starting New Game " << std::endl;
+    char PlClass;
     OutputSys::out_pleaseEnter('p');
-    //KingBuilder::BuildTargetClass();
-    //OutputSys::out_pleaseEnter('e');
     // input
+    std::cin >> PlClass;
     Create create;
         create.playerBuilder(new KingBuilder);
-        create.constructPlayer();
+        switch (PlClass) {
+        case 'w':
+              create.constructPlayer(4,2,1);
+              break;
+        case 'r':
+                create.constructPlayer(2,4,1);
+                break;
+        case 'm':
+            create.constructPlayer(1,2,4);
+            break;
+        default:
+            std::cerr << "Can't understand you ";
+        }
+
 
         Player Motlaf = create.getPlayer();
         Motlaf.open();

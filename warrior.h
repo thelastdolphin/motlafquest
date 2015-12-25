@@ -15,11 +15,11 @@ void buildMind(void);
 class KingBuilder : public PlayerBuilder {
 public:
     int BuildTargetClass(std::string);
-    void buildStrength(void);
+    void buildStrength(int);
 
-    void buildAgility(void);
+    void buildAgility(int);
 
-    void buildMind(void);
+    void buildMind(int);
 
 
 };

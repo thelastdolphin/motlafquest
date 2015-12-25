@@ -36,7 +36,14 @@ void Player::mind(int mind){
 }
 
 void Player::open() const {
-    std::cout << "Player with " << strength_ << " strength " << agility_ << " agility and " << mind_ << "mind." << std::endl;
+    std::cout << "Player with "
+              << strength_
+              << " strength "
+              << agility_
+              << " agility and "
+              << mind_
+              << " mind."
+              << std::endl;
 }
 
 //***************************
@@ -59,8 +66,8 @@ const Player& Create::getPlayer(){
     return playerBuilder_->player();
 }
 
-void Create::constructPlayer(){
-    playerBuilder_->buildStrength();
-    playerBuilder_->buildAgility();
-    playerBuilder_->buildMind();
+void Create::constructPlayer(int str, int agi, int min){
+    playerBuilder_->buildStrength(str);
+    playerBuilder_->buildAgility(agi);
+    playerBuilder_->buildMind(min);
 }

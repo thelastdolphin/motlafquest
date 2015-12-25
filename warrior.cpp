@@ -30,14 +30,14 @@ KingBuilder::BuildTargetClass(){
     }; вызвать метод, устанавливающий параметры по-своему, для каждого класса
 }
 */
-void KingBuilder::buildStrength(void) {
-    player_.strength(10);
+void KingBuilder::buildStrength(int str) {
+    player_.strength(str);
 }
 
-void KingBuilder::buildAgility(void){
-    player_.agility(7);
+void KingBuilder::buildAgility(int agi){
+    player_.agility(agi);
 }
 
-void KingBuilder::buildMind(void){
-    player_.mind(3);
+void KingBuilder::buildMind(int min){
+    player_.mind(min);
 }

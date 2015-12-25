@@ -25,13 +25,3 @@ unsigned int Input::inputGetAnswer() { // temp int version
     std::cin >> chosenVariant;
     return chosenVariant;
 }
-
-/*std::string Input::inputGetMainEnemyName(){
-    std::cin >> Opponent;
-    return Opponent;
-}*/
-
-/*std::string Input::inputGetPlayerClass(Player MainPlayer){
-    std::cin >> PlayerClass;
-    return PlayerClass;
-}*/
