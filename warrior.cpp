@@ -24,7 +24,7 @@ KingBuilder::BuildTargetClass(){
     KingBuilder::buildMind();
 
 
-    /*    player_.strength(10);
+        player_.strength(10);
         player_.agility(7);
         player_.mind(3);
     }; вызвать метод, устанавливающий параметры по-своему, для каждого класса

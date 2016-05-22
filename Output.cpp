@@ -1,4 +1,4 @@
-#include "Output.h"
+#include "output.h"
 
 OutputSys::OutputSys(){
 
@@ -10,32 +10,32 @@ OutputSys::~OutputSys(){
 
 // PRIVATE
 
-std::string OutputSys::out_newGame(){
+const std::string OutputSys::out_newGame() {
     std::string NewGame = "Start New Game";
     return NewGame;
 }
 
-std::string OutputSys::out_saveGame(){
+const std::string OutputSys::out_saveGame() {
     std::string SaveGame = "Save Game";
     return SaveGame;
 }
 
-std::string OutputSys::out_loadGame(){
+const std::string OutputSys::out_loadGame() {
     std::string LoadGame = "Load Game";
     return LoadGame;
 }
 
-std::string OutputSys::out_showShortens(){ // здесь нужно
+const std::string OutputSys::out_showShortens() { // здесь нужно
     std::string Shortens = "Shortens: ";
     return Shortens;
 }
 
-std::string OutputSys::out_exitGame(){
+const std::__cxx11::string OutputSys::out_exitGame(){
     std::string ExitGame = "Exit Game";
     return ExitGame;
 }
 
-void OutputSys::out_pleaseEnter(char chosenVariant){
+const void OutputSys::out_pleaseEnter(char chosenVariant){
     std::string PleaseEnter = "Please, enter ";
     std::string PlayerClass = "player class: ";
     std::string OpponentName = "name of your bitter enemy: ";
@@ -59,7 +59,7 @@ void OutputSys::out_pleaseEnter(char chosenVariant){
 
 // PUBLIC
 
-void OutputSys::out_MainMenu() {
+const void OutputSys::out_MainMenu() {
     std::string MainMenu = "Main Menu";
     std::string MotlafQuest = "Motlaf Quest";
     std::cout << MotlafQuest << std::endl

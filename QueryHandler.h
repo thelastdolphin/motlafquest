@@ -2,7 +2,7 @@
 #define QUERYHANDLER_H
 #include "Log.h"
 #include "Input.h"
-#include "Output.h"
+#include "output.h"
 
 class QueryHandler : public OutputSys, public Input {
 public:

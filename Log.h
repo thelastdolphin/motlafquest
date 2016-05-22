@@ -8,10 +8,13 @@
 
 class Log {
 public:
+    Log();
+    ~Log();
     void Lcreate(std::string ClassName);
     void Ldestroy(std::string ClassName);
 private:
-    char * currentTime();
+    const char * currentTime() noexcept;
+
 };
 
 #endif

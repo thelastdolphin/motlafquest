@@ -1,7 +1,7 @@
 #include "Player.h"
 #include "Castle.h"
 #include "Input.h"
-#include "Output.h"
+#include "output.h"
 #include "QueryHandler.h"
 #include "warrior.h"
 
@@ -17,7 +17,7 @@ int main(void) {
 
     MainGame->startMainMenuScript();
     std::cout << InEx->inputGetOk();
-
+    std::cout << "Good-bye!" << std::endl; // incapsulate this!
     //delete QH;
     delete Out;
     delete InEx;

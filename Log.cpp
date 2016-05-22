@@ -3,6 +3,14 @@ using namespace std;
 
 // писать в лог только при новом запуске файла, старые записи убирать.
 
+Log::Log() {
+
+}
+
+Log::~Log(){
+
+}
+
 void Log::Lcreate(std::string ClassName){
     std::string LogAddress = "Logs/" + ClassName + ".log";
     ofstream GameLog(LogAddress.c_str(), ios_base::out | ios_base::app);
@@ -23,7 +31,7 @@ void Log::Ldestroy(std::string ClassName) {
 
 
 
-char * Log::currentTime() {
+const char * Log::currentTime() noexcept {
     time_t RawTime;
     struct tm * CurTime;
 

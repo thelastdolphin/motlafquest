@@ -1,7 +1,7 @@
 #ifndef INPUT
 #define INPUT
 #include "Player.h"
-#include "Output.h"
+#include "output.h"
 class Input{
 public:
     Input();

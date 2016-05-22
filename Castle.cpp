@@ -14,3 +14,10 @@ Castle::~Castle(){
     delete DestroyCastleLog;
 }
 
+//Castle::Room(){
+
+//}
+
+//Castle::~Room(){
+
+//}

@@ -29,8 +29,8 @@ int mind_;
 
 class PlayerBuilder {
 public:
+    virtual ~PlayerBuilder() = default;
     const Player& player();
-
     virtual void buildStrength(int)=0;
     virtual void buildAgility(int)=0;
     virtual void buildMind(int)=0;
@@ -42,7 +42,7 @@ protected:
 class Create{
 public:
     Create() : playerBuilder_(NULL){}
-    Create::~Create(){
+    ~Create(){
         if (playerBuilder_)
             delete playerBuilder_;
     }
