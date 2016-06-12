@@ -20,10 +20,11 @@ HEADERS += \
     Log.h \
     Player.h \
     Input.h \
-    Output.h \
+    output.h \
     QueryHandler.h \
     agreements.h \
-    warrior.h
+    warrior.h \
+    output.h
 
 DISTFILES +=
 

@@ -35,7 +35,7 @@ const std::__cxx11::string OutputSys::out_exitGame(){
     return ExitGame;
 }
 
-const void OutputSys::out_pleaseEnter(char chosenVariant){
+void OutputSys::out_pleaseEnter(char chosenVariant){
     std::string PleaseEnter = "Please, enter ";
     std::string PlayerClass = "player class: ";
     std::string OpponentName = "name of your bitter enemy: ";
@@ -59,7 +59,7 @@ const void OutputSys::out_pleaseEnter(char chosenVariant){
 
 // PUBLIC
 
-const void OutputSys::out_MainMenu() {
+void OutputSys::out_MainMenu() {
     std::string MainMenu = "Main Menu";
     std::string MotlafQuest = "Motlaf Quest";
     std::cout << MotlafQuest << std::endl

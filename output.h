@@ -9,7 +9,7 @@ public:
      OutputSys();
     ~OutputSys();
 
-    static const void out_MainMenu();
+    static void out_MainMenu();
 
 protected:
     static const std::string MotlafQuest;
