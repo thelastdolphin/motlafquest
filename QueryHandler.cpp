@@ -15,7 +15,7 @@ void QueryHandler::exitGameScript(void){
     std::exit(0);
 }
 
-void QueryHandler::startMainMenuScript(){
+void QueryHandler::showMainMenuScript(){
     for (auto i=5; i>0; --i){
         OutputSys::out_MainMenu();
         switch(Input::inputGetAnswer()){ // заменить вывод строк на методы QueryHandler ("скрипты")
@@ -56,22 +56,23 @@ void QueryHandler::startNewGameScript(){
         create.playerBuilder(new KingBuilder);
         switch (PlClass) {
         case 'w':
-              {create.constructPlayer(4,2,1);
-              Player MotlafWarrior = create.getPlayer();
-              MotlafWarrior.open();
-              break;
-              }
-        case 'r':
-              {create.constructPlayer(2,4,1);
-              Player MotlafRogue = create.getPlayer();
-              MotlafRogue.open();
+            {create.constructPlayer(4,2,1);
+            Player MotlafWarrior = create.getPlayer();
+            MotlafWarrior.open();
             break;
-        }
+            }
+        case 'r':
+            {create.constructPlayer(2,4,1);
+            Player MotlafRogue = create.getPlayer();
+            MotlafRogue.open();
+            break;
+            }
         case 'm':
-        {create.constructPlayer(1,2,4);
+            {create.constructPlayer(1,2,4);
             Player MotlafMage = create.getPlayer();
             MotlafMage.open();
-            break;}
+            break;
+            }
         default:
             std::cerr << "Can't understand you " << std::endl;
             break;

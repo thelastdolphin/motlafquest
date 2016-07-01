@@ -8,7 +8,7 @@ class QueryHandler : public OutputSys, public Input {
 public:
     QueryHandler();  // TEMP
     virtual ~QueryHandler();
-    void startMainMenuScript();
+    void showMainMenuScript();
     void startNewGameScript();
     void loadOldGameScript();
     void pauseMenuScript();

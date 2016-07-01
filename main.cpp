@@ -15,8 +15,8 @@ int main(void) {
     //QueryHandler * QH = new QueryHandler;
 
 
-    MainGame->startMainMenuScript();
-    std::cout << InEx->inputGetOk();
+    MainGame->showMainMenuScript();
+    InEx->inputGetOk();
     std::cout << "Good-bye!" << std::endl; // incapsulate this!
     //delete QH;
     delete Out;

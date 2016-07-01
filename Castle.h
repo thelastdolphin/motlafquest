@@ -6,7 +6,24 @@
 class Castle {
 public:
   Castle();
-  //virtual 
-  ~Castle();
+  virtual ~Castle();
 };
+
+class SpikeCastle : public Castle {
+
+};
+
+class DarkCastle : public Castle {
+
+};
+
+class MagicCastle : public Castle{
+public:
+    MagicCastle();
+};
+
+
+
+
+
 #endif
