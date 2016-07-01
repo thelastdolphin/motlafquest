@@ -23,5 +23,11 @@ int Input::inputGetOk() { // temp
 unsigned int Input::inputGetAnswer() { // temp int version
     unsigned int chosenVariant;
     std::cin >> chosenVariant;
+    while (std::cin.fail()){
+        std::cout << "Please, input 1-4 numbers:" << std::endl;
+        std::cin.clear();
+        std::cin.ignore(256, '\n');
+        std::cin >>  chosenVariant;
+    };
     return chosenVariant;
 }
