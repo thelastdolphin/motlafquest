@@ -9,15 +9,15 @@ public:
      OutputSys();
     ~OutputSys();
 
-    static void out_MainMenu();
+    static void out_MainMenu() noexcept;
 
 protected:
     static const std::string MotlafQuest;
-    static const std::string out_newGame();
-    static const std::string out_saveGame();
-    static const std::string out_loadGame();
-    static const std::string out_showShortens();
-    static const std::string out_exitGame();
-    static void out_pleaseEnter(char chosenVariant);
+    static const std::string out_newGame() noexcept;
+    static const std::string out_saveGame() noexcept;
+    static const std::string out_loadGame() noexcept;
+    static const std::string out_showShortens() noexcept;
+    static const std::string out_exitGame() noexcept;
+    static void out_pleaseEnter(char chosenVariant) noexcept;
 };
 #endif

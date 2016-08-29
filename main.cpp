@@ -12,6 +12,7 @@ int main(void) {
     //Castle * Sorrow = new Castle;
     Input * InEx = new Input;
     OutputSys * Out = new OutputSys;
+    Castle& instance = Castle::Instance();
     //QueryHandler * QH = new QueryHandler;
 
 

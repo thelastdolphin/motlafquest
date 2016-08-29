@@ -53,7 +53,7 @@ void QueryHandler::startNewGameScript(){
     // сделать проверку вводимых значений с помощью функции в Input, входными данными которой будут ожидаемые аргументы
     // если функция неуспешна, то попросить ввести заново, всего 3 попытки.
     Create create;
-        create.playerBuilder(new KingBuilder);
+        create.playerBuilder(new WarriorBuilder);
         switch (PlClass) {
         case 'w':
             {create.constructPlayer(4,2,1);

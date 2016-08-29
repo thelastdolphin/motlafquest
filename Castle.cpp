@@ -14,10 +14,17 @@ Castle::~Castle(){
     delete DestroyCastleLog;
 }
 
-//Castle::Room(){
 
+Castle& Castle::Instance(){
+    static Castle Singleton;
+    return Singleton;
+}
+
+//Получить ссылку на синглтон для работы с ним:
+
+
+//Castle::Castle() {
+//    std::vector<Room> CastleQueue(10);
 //}
 
-//Castle::~Room(){
 
-//}
