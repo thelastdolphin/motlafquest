@@ -1,5 +1,4 @@
-#ifndef AGREEMENTS
-#define AGREEMENTS
+#pragma once
 
 typedef unsigned short int AttributeValue;
 //typedef unsigned int PriceValue;
@@ -7,7 +6,4 @@ typedef unsigned short int AttributeValue;
 AttributeValue maxAddition = 4;
 AttributeValue middleAddition = 2;
 AttributeValue basicAddition = 1;
-
-
-#endif // AGREEMENTS
 

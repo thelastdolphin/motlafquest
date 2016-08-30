@@ -1,5 +1,4 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 #include "Log.h"
 
 class Player {
@@ -56,6 +55,3 @@ public:
 private:
     PlayerBuilder* playerBuilder_;
 };
-
-
-#endif

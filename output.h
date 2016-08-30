@@ -1,5 +1,4 @@
-#ifndef OUTPUT_H
-#define OUTPUT_H
+#pragma once
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -20,4 +19,3 @@ protected:
     static const std::string out_exitGame() noexcept;
     static void out_pleaseEnter(char chosenVariant) noexcept;
 };
-#endif

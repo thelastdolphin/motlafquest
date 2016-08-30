@@ -1,5 +1,4 @@
-#ifndef QUERYHANDLER_H
-#define QUERYHANDLER_H
+#pragma once
 #include "Log.h"
 #include "Input.h"
 #include "output.h"
@@ -14,4 +13,3 @@ public:
     void pauseMenuScript();
     void exitGameScript(void);
 };
-#endif

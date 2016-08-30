@@ -1,5 +1,4 @@
-#ifndef CASTLE_H
-#define CASTLE_H
+#pragma once
 #include <list>
 #include "Log.h"
 
@@ -44,8 +43,3 @@ public:
     MagicCastle();
 };
 */
-
-
-
-
-#endif

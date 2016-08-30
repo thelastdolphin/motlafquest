@@ -1,5 +1,4 @@
-#ifndef INPUT
-#define INPUT
+#pragma once
 #include "Player.h"
 #include "output.h"
 class Input{
@@ -12,5 +11,5 @@ public:
     static int inputGetOk(); // возвращает ноль, если строка правильна
     static unsigned int inputGetAnswer();
 };
-#endif // INPUT
+// INPUT
 

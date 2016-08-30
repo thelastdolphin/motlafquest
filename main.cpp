@@ -8,21 +8,16 @@
 int main(void) {
 
     QueryHandler * MainGame = new QueryHandler;
-    //Player * Motlaf = Player::Instance();
-    //Castle * Sorrow = new Castle;
     Input * InEx = new Input;
     OutputSys * Out = new OutputSys;
-    Castle& instance = Castle::Instance();
+    //Castle& instance = Castle::Instance();
     //QueryHandler * QH = new QueryHandler;
-
-
     MainGame->showMainMenuScript();
     InEx->inputGetOk();
     std::cout << "Good-bye!" << std::endl; // incapsulate this!
     //delete QH;
     delete Out;
     delete InEx;
-    //delete Sorrow;
     //delete Motlaf;
     delete MainGame;
 return 0;
