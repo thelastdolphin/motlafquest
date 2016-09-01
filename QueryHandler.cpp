@@ -53,22 +53,28 @@ void QueryHandler::startNewGameScript(){
     // сделать проверку вводимых значений с помощью функции в Input, входными данными которой будут ожидаемые аргументы
     // если функция неуспешна, то попросить ввести заново, всего 3 попытки.
     Create create;
-        create.playerBuilder(new WarriorBuilder);
+        //create.playerBuilder(new WarriorBuilder);
         switch (PlClass) {
         case 'w':
-            {create.constructPlayer(4,2,1);
+            {
+            create.playerBuilder(new WarriorBuilder);
+            create.constructPlayer(4,2,1);
             Player MotlafWarrior = create.getPlayer();
             MotlafWarrior.open();
             break;
             }
         case 'r':
-            {create.constructPlayer(2,4,1);
+            {
+            create.playerBuilder(new RogueBuilder);
+            create.constructPlayer(2,4,1);
             Player MotlafRogue = create.getPlayer();
             MotlafRogue.open();
             break;
             }
         case 'm':
-            {create.constructPlayer(1,2,4);
+            {
+            create.playerBuilder(new WarriorBuilder);
+            create.constructPlayer(1,2,4);
             Player MotlafMage = create.getPlayer();
             MotlafMage.open();
             break;

@@ -15,3 +15,19 @@ void WarriorBuilder::buildMind(int WMind) {
     WMind=WarriorMind;
     player_.mind(WMind);
 }
+
+
+void RogueBuilder::buildStrength(int RStrength) {
+    RStrength=RogueStrength;
+    player_.strength(RStrength);
+}
+
+void RogueBuilder::buildAgility(int RAgility) {
+    RAgility=RogueAgility;
+    player_.agility(RAgility);
+}
+
+void RogueBuilder::buildMind(int RMind) {
+    RMind=RogueMind;
+    player_.mind(RMind);
+}
