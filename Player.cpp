@@ -44,6 +44,18 @@ const Player& PlayerBuilder::player(){
     return player_;
 }
 
+void PlayerBuilder::buildStrength(int bStrength) {
+    player_.strength(bStrength);
+}
+
+void PlayerBuilder::buildAgility(int bAgility) {
+   player_.agility(bAgility);
+}
+
+void PlayerBuilder::buildMind(int bMind) {
+    player_.mind(bMind);
+}
+
 //***************************
 
 

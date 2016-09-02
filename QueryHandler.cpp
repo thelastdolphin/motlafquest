@@ -53,8 +53,7 @@ void QueryHandler::startNewGameScript(){
     // сделать проверку вводимых значений с помощью функции в Input, входными данными которой будут ожидаемые аргументы
     // если функция неуспешна, то попросить ввести заново, всего 3 попытки.
     Create create;
-        //create.playerBuilder(new WarriorBuilder);
-        switch (PlClass) {
+    switch (PlClass) {
         case 'w':
             {
             create.playerBuilder(new WarriorBuilder);
@@ -73,7 +72,7 @@ void QueryHandler::startNewGameScript(){
             }
         case 'm':
             {
-            create.playerBuilder(new WarriorBuilder);
+            create.playerBuilder(new MageBuilder);
             create.constructPlayer(1,2,4);
             Player MotlafMage = create.getPlayer();
             MotlafMage.open();
@@ -82,7 +81,7 @@ void QueryHandler::startNewGameScript(){
         default:
             std::cerr << "Can't understand you " << std::endl;
             break;
-        }
+    }
 
 
 

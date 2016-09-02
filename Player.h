@@ -30,9 +30,9 @@ class PlayerBuilder {
 public:
     virtual ~PlayerBuilder() = default;
     const Player& player();
-    virtual void buildStrength(int)=0;
-    virtual void buildAgility(int)=0;
-    virtual void buildMind(int)=0;
+    virtual void buildStrength(int);
+    virtual void buildAgility(int);
+    virtual void buildMind(int);
 
 protected:
     Player player_;
