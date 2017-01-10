@@ -3,16 +3,17 @@
 #include "Input.h"
 #include "output.h"
 #include "QueryHandler.h"
-#include "warrior.h"
+#include "Builders.h"
 
 int main(void) {
 
     QueryHandler * MainGame = new QueryHandler;
     Input * InEx = new Input;
     OutputSys * Out = new OutputSys;
-    //Castle& instance = Castle::Instance();
-    //QueryHandler * QH = new QueryHandler;
-    MainGame->showMainMenuScript();
+    MainGame->out_MainMenu();
+    InEx->inputGetAnswer();
+    std::shared_ptr<Player> PlayerPtr = MainGame->startNewGameScript();
+    PlayerPtr->showPlayer();
     InEx->inputGetOk();
     std::cout << "Good-bye!" << std::endl; // incapsulate this!
     //delete QH;

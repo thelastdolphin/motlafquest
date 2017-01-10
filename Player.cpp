@@ -1,6 +1,7 @@
 #include "Player.h"
 
 Player::Player(){
+    // shitcode
     Log * CreatePlayerLog = new Log;
     std::string className = "Player";
     CreatePlayerLog->Lcreate(className);
@@ -8,25 +9,14 @@ Player::Player(){
 }
 
 Player::~Player(){
+    //shitcode
     Log * DestroyPlayerLog = new Log;
     std::string className = "Player";
     DestroyPlayerLog->Ldestroy(className);
     delete DestroyPlayerLog;
 }
 
-void Player::strength(int strength){
-    strength_=strength;
-}
-
-void Player::agility(int agility){
-    agility_=agility;
-}
-
-void Player::mind(int mind){
-    mind_=mind;
-}
-
-void Player::open() const {
+void Player::showPlayer() const {
     std::cout << "Player with "
               << strength_
               << " strength "
@@ -37,40 +27,53 @@ void Player::open() const {
               << std::endl;
 }
 
+void Player::setStr(const unsigned int str){
+    strength_ = str;
+}
+
+void Player::setAgi(const unsigned int agi){
+    agility_ = agi;
+}
+
+void Player::setMnd(const unsigned int mnd){
+    mind_ = mnd;
+}
+
+void Player::setHP(const unsigned int hp) {
+    hp_ = hp;
+}
+
+void Player::setAP(const unsigned int ap) {
+    ap_ = ap;
+}
+
 //***************************
 
 
-const Player& PlayerBuilder::player(){
+std::shared_ptr<Player> PlayerBuilder::getPlayer(){
     return player_;
 }
 
-void PlayerBuilder::buildStrength(int bStrength) {
-    player_.strength(bStrength);
-}
-
-void PlayerBuilder::buildAgility(int bAgility) {
-   player_.agility(bAgility);
-}
-
-void PlayerBuilder::buildMind(int bMind) {
-    player_.mind(bMind);
+void PlayerBuilder::createNewPlayerProduct() {
+    player_.reset(new Player);
 }
 
 //***************************
 
 
-void Create::playerBuilder(PlayerBuilder* playerBuilder) {
-    if(playerBuilder_)
-        delete playerBuilder_;
+void Create::setPlayerBuilder(PlayerBuilder* playerBuilder) {
     playerBuilder_ = playerBuilder;
 }
 
-const Player& Create::getPlayer(){
-    return playerBuilder_->player();
+std::shared_ptr<Player> Create::getPlayer(){
+    return playerBuilder_->getPlayer();
 }
 
-void Create::constructPlayer(int str, int agi, int min){
-    playerBuilder_->buildStrength(str);
-    playerBuilder_->buildAgility(agi);
-    playerBuilder_->buildMind(min);
+void Create::constructPlayer(){
+    playerBuilder_->createNewPlayerProduct();
+    playerBuilder_->buildStrength();
+    playerBuilder_->buildAgility();
+    playerBuilder_->buildMind();
+    playerBuilder_->buildActionPoints();
+    playerBuilder_->buildHitPoints();
 }

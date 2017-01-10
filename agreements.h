@@ -1,9 +1,9 @@
 #pragma once
 
-typedef unsigned short int AttributeValue;
+typedef unsigned int AttributeValue;
 //typedef unsigned int PriceValue;
 
-AttributeValue maxAddition = 4;
-AttributeValue middleAddition = 2;
-AttributeValue basicAddition = 1;
+const unsigned int MAXADD = 4;
+const unsigned int MIDADD = 2;
+const unsigned int BASADD = 1;
 

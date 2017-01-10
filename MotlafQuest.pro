@@ -10,7 +10,7 @@ SOURCES += main.cpp \
     Input.cpp \
     Output.cpp \
     QueryHandler.cpp \
-    warrior.cpp
+    Builders.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -23,8 +23,8 @@ HEADERS += \
     output.h \
     QueryHandler.h \
     agreements.h \
-    warrior.h \
-    output.h
+    output.h \
+    Builders.h
 
 DISTFILES +=
 

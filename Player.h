@@ -1,25 +1,29 @@
 #pragma once
+#include "agreements.h"
 #include "Log.h"
+#include <memory>
 
 class Player {
-
+// Product
 public:
 //static Player* Instance();
-Player();
-virtual ~Player();
-
-void strength(int);
-void agility(int);
-void mind(int);
-void open() const;
+    Player();
+    virtual ~Player();
+    void showPlayer() const;
+    
+    virtual void setStr(const unsigned int);
+    virtual void setAgi(const unsigned int);
+    virtual void setMnd(const unsigned int);
+    virtual void setHP(const unsigned int);
+    virtual void setAP(const unsigned int);
 
 private:
 //static Player* _instance;
-int strength_;
-int agility_;
-int mind_;
-
-
+    AttributeValue strength_;
+    AttributeValue agility_;
+    AttributeValue mind_;
+    AttributeValue hp_;
+    AttributeValue ap_;
 
 /*protected:
     Player();*/
@@ -27,30 +31,34 @@ int mind_;
 };
 
 class PlayerBuilder {
+// Abstract Builder
 public:
+    PlayerBuilder() {}
     virtual ~PlayerBuilder() = default;
-    const Player& player();
-    virtual void buildStrength(int);
-    virtual void buildAgility(int);
-    virtual void buildMind(int);
+    std::shared_ptr<Player> getPlayer();
 
+    void createNewPlayerProduct();
+
+    virtual void buildStrength()=0;
+    virtual void buildAgility()=0;
+    virtual void buildMind()=0;
+    virtual void buildActionPoints()=0;
+    virtual void buildHitPoints()=0;
 protected:
-    Player player_;
+    std::shared_ptr<Player> player_;
 };
 
 class Create{
+// Director
 public:
     Create() : playerBuilder_(NULL){}
-    ~Create(){
-        if (playerBuilder_)
-            delete playerBuilder_;
-    }
+    ~Create(){}
 
-    void playerBuilder(PlayerBuilder*);
+    void setPlayerBuilder(PlayerBuilder*);
 
-    const Player& getPlayer();
+    std::shared_ptr<Player> getPlayer();
 
-    void constructPlayer(int str, int agi, int min);
+    void constructPlayer();
 
 private:
     PlayerBuilder* playerBuilder_;
