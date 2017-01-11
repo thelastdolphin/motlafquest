@@ -20,7 +20,7 @@ void WarriorBuilder::buildActionPoints(){
     player_->setAP(WarriorAP);
 }
 
-// ==================
+// ================================
 
 void RogueBuilder::buildStrength(){
     player_->setStr(MIDADD);
@@ -42,6 +42,8 @@ void RogueBuilder::buildActionPoints(){
     player_->setAP(RogueAP);
 }
 
+// ================================
+
 void MageBuilder::buildStrength(){
     player_->setStr(BASADD);
 }
@@ -53,11 +55,11 @@ void MageBuilder::buildMind(){
 }
 void MageBuilder::buildHitPoints(){
     // посчитать ХП воина
-    const unsigned int WarriorHP = 10; // условное число
-    player_->setHP(WarriorHP);
+    const unsigned int MageHP = 10; // условное число
+    player_->setHP(MageHP);
 }
 void MageBuilder::buildActionPoints(){
     // посчитать АП воина
-    const unsigned int WarriorAP = 10;
-    player_->setAP(WarriorAP);
+    const unsigned int MageAP = 10;
+    player_->setAP(MageAP);
 }

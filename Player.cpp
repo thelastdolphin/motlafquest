@@ -21,9 +21,12 @@ void Player::showPlayer() const {
               << strength_
               << " strength "
               << agility_
-              << " agility and "
+              << " agility "
               << mind_
-              << " mind."
+              << " mind. HP:"
+              << hp_
+              << " AP:"
+              << ap_
               << std::endl;
 }
 

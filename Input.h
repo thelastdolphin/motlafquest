@@ -1,7 +1,8 @@
 #pragma once
 #include "Player.h"
 #include "output.h"
-class Input{
+class
+        Input{
 public:
     Input();
     virtual ~Input();
