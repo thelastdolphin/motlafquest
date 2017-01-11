@@ -62,6 +62,7 @@ std::shared_ptr<Player> QueryHandler::startNewGameScript(){ //заставить
             create.setPlayerBuilder(&WB);
             create.constructPlayer();
             PlayerPtr = create.getPlayer();
+            break;
             }
         case 'r':
             {
@@ -69,6 +70,7 @@ std::shared_ptr<Player> QueryHandler::startNewGameScript(){ //заставить
             create.setPlayerBuilder(&RB);
             create.constructPlayer();
             PlayerPtr = create.getPlayer();
+            break;
             }
         case 'm':
             {
@@ -76,10 +78,10 @@ std::shared_ptr<Player> QueryHandler::startNewGameScript(){ //заставить
             create.setPlayerBuilder(&MB);
             create.constructPlayer();
             PlayerPtr = create.getPlayer();
+            break;
             }
         default:
             std::cerr << "Can't understand you " << std::endl;
-            break;
     }
         // при указании, что получилось, нужно указать класс, также записывая эту инфу в объект.
         //
