@@ -20,7 +20,7 @@ HEADERS += \
     Log.h \
     Player.h \
     Input.h \
-    output.h \
+    Output.h \
     QueryHandler.h \
     agreements.h \
     output.h \

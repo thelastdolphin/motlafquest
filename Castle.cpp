@@ -1,22 +1,26 @@
 #include "Castle.h"
 
-Castle::Castle(){
+Castle::Castle(int size): CastleSize(size) {
+    /*
     Log * BuildCastleLog = new Log;
     std::string ClassName = "Castle";
     BuildCastleLog->Lcreate(ClassName);
     delete BuildCastleLog;
+    */
 }
 
 Castle::~Castle(){
+    /*
     Log * DestroyCastleLog = new Log;
     std::string ClassName = "Castle";
     DestroyCastleLog->Ldestroy(ClassName);
     delete DestroyCastleLog;
+    */
 }
 
 
 Castle& Castle::Instance(){
-    static Castle Singleton;
+    static Castle Singleton(0);
     return Singleton;
 }
 

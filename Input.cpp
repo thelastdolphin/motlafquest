@@ -6,6 +6,10 @@ Input::Input(){
 Input::~Input(){
 }
 
+Input * Input::execInputSys(){
+    return new Input();
+}
+
 int Input::inputGetOk() { // temp
     std::string OkEntered;
     std::string OkTemplate = "ok";

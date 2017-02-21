@@ -22,9 +22,10 @@ public:
   //virtual ~Castle();
     static Castle& Instance();
 private:
-    Castle();
+    Castle(int);
     ~Castle();
 
+    int CastleSize = 0;
     Castle(Castle const&) = delete;
     Castle& operator= (Castle const&) = delete;
 };

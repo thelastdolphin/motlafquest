@@ -1,14 +1,13 @@
-#include "output.h"
+#include "Output.h"
+// PRIVATE
 
 OutputSys::OutputSys(){
 
 }
 
-OutputSys::~OutputSys(){
+// END
 
-}
-
-// PRIVATE
+// PROTECTED
 
 const std::string OutputSys::out_newGame() noexcept {
     std::string NewGame = "Start New Game";
@@ -30,7 +29,7 @@ const std::string OutputSys::out_showShortens() noexcept { // здесь нуж�
     return Shortens;
 }
 
-const std::__cxx11::string OutputSys::out_exitGame() noexcept {
+const std::string OutputSys::out_exitGame() noexcept {
     std::string ExitGame = "Exit Game";
     return ExitGame;
 }
@@ -58,6 +57,14 @@ void OutputSys::out_pleaseEnter(char chosenVariant) noexcept{
 // END
 
 // PUBLIC
+
+OutputSys::~OutputSys(){
+
+}
+
+OutputSys * OutputSys::execOutputSys() {
+    return new OutputSys();
+}
 
 void OutputSys::out_MainMenu() noexcept {
     std::string MainMenu = "Main Menu";

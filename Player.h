@@ -6,7 +6,6 @@
 class Player {
 // Product
 public:
-//static Player* Instance();
     Player();
     virtual ~Player();
     void showPlayer() const;
@@ -18,16 +17,11 @@ public:
     virtual void setAP(const unsigned int);
 
 private:
-//static Player* _instance;
     AttributeValue strength_;
     AttributeValue agility_;
     AttributeValue mind_;
     AttributeValue hp_;
     AttributeValue ap_;
-
-/*protected:
-    Player();*/
-
 };
 
 class PlayerBuilder {

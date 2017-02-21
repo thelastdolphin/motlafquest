@@ -50,7 +50,7 @@ void Player::setAP(const unsigned int ap) {
     ap_ = ap;
 }
 
-//***************************
+// ================================
 
 
 std::shared_ptr<Player> PlayerBuilder::getPlayer(){
@@ -61,7 +61,7 @@ void PlayerBuilder::createNewPlayerProduct() {
     player_.reset(new Player);
 }
 
-//***************************
+// ================================
 
 
 void Create::setPlayerBuilder(PlayerBuilder* playerBuilder) {

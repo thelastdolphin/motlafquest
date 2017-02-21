@@ -9,6 +9,9 @@ QueryHandler::~QueryHandler(){
 
 }
 
+QueryHandler * QueryHandler::createQueryHandler(){
+    return new QueryHandler();
+}
 
 void QueryHandler::exitGameScript(void){
     std::cout << "Exiting " << std::endl;
@@ -81,7 +84,7 @@ std::shared_ptr<Player> QueryHandler::startNewGameScript(){ //заставить
             break;
             }
         default:
-            std::cerr << "Can't understand you " << std::endl;
+            std::cerr << "Can't understand you " << std::endl; // убрать это дерьмо и сделать приличную обработку значений
     }
         // при указании, что получилось, нужно указать класс, также записывая эту инфу в объект.
         //
