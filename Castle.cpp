@@ -19,8 +19,8 @@ Castle::~Castle(){
 }
 
 
-Castle& Castle::Instance(){
-    static Castle Singleton(0);
+Castle& Castle::Instance(int CastleSZ){
+    static Castle Singleton(CastleSZ);
     return Singleton;
 }
 

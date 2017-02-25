@@ -11,7 +11,7 @@ int main(void) {
     QueryHandler * MainGame = MainGame->createQueryHandler();
     Input * InEx = InEx->execInputSys();
     OutputSys * Out = Out->execOutputSys();
-    Castle &CastleExmp = Castle::Instance(); // no need in deleting, Singleton pattern
+    Castle &CastleExmp = Castle::Instance(10); // no need in deleting, Singleton pattern
     
     MainGame->out_MainMenu();
     InEx->inputGetAnswer();
