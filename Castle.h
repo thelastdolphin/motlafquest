@@ -19,11 +19,11 @@ public:
 class Castle {
 public:
   //Castle();
-  //virtual ~Castle();
+  virtual ~Castle();
     static Castle& Instance();
 private:
     Castle(int);
-    ~Castle();
+    //~Castle();
 
     int CastleSize = 0;
     Castle(Castle const&) = delete;
