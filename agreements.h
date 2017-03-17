@@ -7,3 +7,8 @@ const unsigned int MAXADD = 4;
 const unsigned int MIDADD = 2;
 const unsigned int BASADD = 1;
 
+enum class PlayerClasses {
+    WARRIOR,
+    ROGUE,
+    MAGE
+};

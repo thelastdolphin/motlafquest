@@ -1,4 +1,5 @@
 #pragma once
+#include <cctype>
 #include "Log.h"
 #include "Input.h"
 #include "Output.h"
