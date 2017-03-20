@@ -1,10 +1,9 @@
 #pragma once
 #include <cctype>
-#include "Log.h"
-#include "Input.h"
-#include "Output.h"
+#include "log.h"
+#include "inout.h"
 
-class QueryHandler : public OutputSys, public Input {
+class QueryHandler : public InOut {
 public:
     //QueryHandler * createQueryHandler();
     static QueryHandler& Instance();

@@ -1,10 +1,9 @@
-#include "Player.h"
-#include "Castle.h"
-#include "Input.h"
-#include "Output.h"
-#include "QueryHandler.h"
-#include "Builders.h"
-#include "Castle.h"
+#include "player.h"
+#include "castle.h"
+#include "inout.h"
+#include "queryhandler.h"
+#include "builders.h"
+#include "castle.h"
 
 /* 1.Создание персонажа
  * 2.Отображение стартовых параметров
@@ -25,12 +24,12 @@ int main(void) {
     //OutputSys * Out = Out->execOutputSys();
     Castle &CastleExmp = Castle::Instance(10); // no need in deleting, Singleton pattern
     // 1
-    MainGame.out_MainMenu();
-    MainGame.inputGetAnswer();
+    MainGame.ioMainMenu();
+    MainGame.ioGetAnswer();
     std::shared_ptr<Player> PlayerPtr = MainGame.startNewGameScript();
     // 2
     PlayerPtr->showPlayer(); // crashes in case of wrong letter
-    MainGame.inputGetOk();
+    MainGame.ioGetOk();
     // while (smth){
     // }; // 3-8
 

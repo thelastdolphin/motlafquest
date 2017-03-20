@@ -1,4 +1,4 @@
-#include "Builders.h"
+#include "builders.h"
 
 void WarriorBuilder::buildStrength(){
     player_->setStr(MAXADD);

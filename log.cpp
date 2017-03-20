@@ -1,4 +1,4 @@
-#include "Log.h"
+#include "log.h"
 using namespace std;
 
 // писать в лог только при новом запуске файла, старые записи убирать.

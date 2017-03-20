@@ -1,4 +1,4 @@
-#include "Castle.h"
+#include "castle.h"
 
 Castle::Castle(int size): CastleSize(size) {
     /*
