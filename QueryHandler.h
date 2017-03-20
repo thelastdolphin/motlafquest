@@ -6,8 +6,10 @@
 
 class QueryHandler : public OutputSys, public Input {
 public:
-    QueryHandler * createQueryHandler();
-    virtual ~QueryHandler();
+    //QueryHandler * createQueryHandler();
+    static QueryHandler& Instance();
+    
+    //virtual ~QueryHandler();
     //void showMainMenuScript();
     std::shared_ptr<Player> startNewGameScript();
     void loadOldGameScript();
@@ -15,4 +17,7 @@ public:
     void exitGameScript(void);
 private:
     QueryHandler();
+    QueryHandler(QueryHandler const&) = delete;
+    QueryHandler& operator= (QueryHandler const&) = delete;
+    ~QueryHandler();
 };

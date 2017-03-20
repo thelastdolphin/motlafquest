@@ -3,14 +3,20 @@
 #include "Builders.h"
 
 QueryHandler::QueryHandler(){
-
+    Input * InEx = InEx->execInputSys();
+    OutputSys * Out = Out->execOutputSys();
 }
 QueryHandler::~QueryHandler(){
 
 }
 
-QueryHandler * QueryHandler::createQueryHandler(){
-    return new QueryHandler();
+//QueryHandler * QueryHandler::createQueryHandler(){
+//    return new QueryHandler();
+//}
+
+QueryHandler& QueryHandler::Instance(){
+    static QueryHandler Singleton;
+    return Singleton;
 }
 
 void QueryHandler::exitGameScript(void){

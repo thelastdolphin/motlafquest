@@ -20,26 +20,26 @@
 
 int main(void) {
     // 0
-    QueryHandler * MainGame = MainGame->createQueryHandler();
-    Input * InEx = InEx->execInputSys();
-    OutputSys * Out = Out->execOutputSys();
+    QueryHandler&  MainGame = QueryHandler::Instance();
+    //Input * InEx = InEx->execInputSys();
+    //OutputSys * Out = Out->execOutputSys();
     Castle &CastleExmp = Castle::Instance(10); // no need in deleting, Singleton pattern
     // 1
-    MainGame->out_MainMenu();
-    InEx->inputGetAnswer();
-    std::shared_ptr<Player> PlayerPtr = MainGame->startNewGameScript();
+    MainGame.out_MainMenu();
+    MainGame.inputGetAnswer();
+    std::shared_ptr<Player> PlayerPtr = MainGame.startNewGameScript();
     // 2
     PlayerPtr->showPlayer(); // crashes in case of wrong letter
-    InEx->inputGetOk();
+    MainGame.inputGetOk();
     // while (smth){
     // }; // 3-8
 
 
     std::cout << "Good-bye!" << std::endl;
 
-    delete Out; 
-    delete InEx;
-    delete MainGame;
+    //delete Out;
+    //delete InEx;
+    //delete MainGame;
     
     return 0;
 }
