@@ -1,17 +1,21 @@
 #pragma once
-#include <list>
+//#include <list>
+#include <vector>
+#include <iostream> // TEMP
 #include "log.h"
 
 class Room {
 private:
-    Room();
-    ~Room();
+
 
 
     bool isOpened;
-    unsigned int number;
+
 
 public:
+    Room();
+    ~Room();
+    unsigned int number = 3; // TEMP
     unsigned int getRoomNumber(Room *);
 };
 
@@ -21,6 +25,7 @@ public:
     //Castle();
     //virtual ~Castle();
     static Castle& Instance(int);
+    void showRooms();
 private:
     Castle(int);
     ~Castle();

@@ -29,6 +29,7 @@ int main(void) {
     std::shared_ptr<Player> PlayerPtr = MainGame.startNewGameScript();
     // 2
     PlayerPtr->showPlayer(); // crashes in case of wrong letter
+    CastleExmp.showRooms();
     MainGame.ioGetOk();
     // while (smth){
     // }; // 3-8
