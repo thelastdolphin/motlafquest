@@ -3,8 +3,8 @@
 #include "Builders.h"
 
 QueryHandler::QueryHandler(){
-    Input * InEx = InEx->execInputSys();
-    OutputSys * Out = Out->execOutputSys();
+    //Input * InEx = InEx->execInputSys();
+    //OutputSys * Out = Out->execOutputSys();
 }
 QueryHandler::~QueryHandler(){
 
