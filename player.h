@@ -1,6 +1,6 @@
 #pragma once
 #include "agreements.h"
-#include "Log.h"
+#include "log.h"
 #include <memory>
 
 class Player {

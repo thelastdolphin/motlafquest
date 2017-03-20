@@ -1,16 +1,22 @@
-#include "QueryHandler.h"
-#include "Player.h"
-#include "Builders.h"
+#include "queryhandler.h"
+#include "player.h"
+#include "builders.h"
 
 QueryHandler::QueryHandler(){
-
+    //Input * InEx = InEx->execInputSys();
+    //OutputSys * Out = Out->execOutputSys();
 }
 QueryHandler::~QueryHandler(){
 
 }
 
-QueryHandler * QueryHandler::createQueryHandler(){
-    return new QueryHandler();
+//QueryHandler * QueryHandler::createQueryHandler(){
+//    return new QueryHandler();
+//}
+
+QueryHandler& QueryHandler::Instance(){
+    static QueryHandler Singleton;
+    return Singleton;
 }
 
 void QueryHandler::exitGameScript(void){
@@ -48,7 +54,7 @@ void QueryHandler::showMainMenuScript(){
 std::shared_ptr<Player> QueryHandler::startNewGameScript(){ //заставить возвращать сконструированный объект игрока
     std::cout << "Starting New Game " << std::endl;
     char PlClass;
-    OutputSys::out_pleaseEnter('p'); // input
+    InOut::ioPleaseEnter('p'); // input
 
     std::cout << "W means Warrior, R means Rogue, M means Mage. Choose your destiny!" << std::endl
                 << "After choosing class, enter OK." << std::endl;

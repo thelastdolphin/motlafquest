@@ -1,12 +1,9 @@
-#include "Castle.h"
+#include "castle.h"
+
+Room::Room(){}
+Room::~Room(){}
 
 Castle::Castle(int size): CastleSize(size) {
-    /*
-    Log * BuildCastleLog = new Log;
-    std::string ClassName = "Castle";
-    BuildCastleLog->Lcreate(ClassName);
-    delete BuildCastleLog;
-    */
 }
 
 Castle::~Castle(){
@@ -24,11 +21,10 @@ Castle& Castle::Instance(int CastleSZ){
     return Singleton;
 }
 
-//Получить ссылку на синглтон для работы с ним:
-
-
-//Castle::Castle() {
-//    std::vector<Room> CastleQueue(10);
-//}
-
+void Castle::showRooms(){
+    std::vector<Room> Corridor(CastleSize);
+    for (int i=0; i<CastleSize; i++){
+        std::cout << Corridor[i].number << std::endl;
+    }
+}
 

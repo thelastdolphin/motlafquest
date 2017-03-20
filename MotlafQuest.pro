@@ -4,27 +4,24 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    Castle.cpp \
-    Log.cpp \
-    Player.cpp \
-    Input.cpp \
-    Output.cpp \
-    QueryHandler.cpp \
-    Builders.cpp
+    inout.cpp \
+    queryhandler.cpp \
+    player.cpp \
+    builders.cpp \
+    log.cpp \
+    castle.cpp \
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    Castle.h \
-    Log.h \
-    Player.h \
-    Input.h \
-    Output.h \
-    QueryHandler.h \
+    inout.h \
+    queryhandler.h \
     agreements.h \
-    output.h \
-    Builders.h
+    builders.h \
+    player.h \
+    log.h \
+    castle.h \
 
 DISTFILES +=
 
