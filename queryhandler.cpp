@@ -1,6 +1,4 @@
 #include "queryhandler.h"
-#include "player.h"
-#include "builders.h"
 
 QueryHandler::QueryHandler(){
     //Input * InEx = InEx->execInputSys();

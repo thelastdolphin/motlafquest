@@ -1,6 +1,7 @@
 #pragma once
 #include <cctype>
-#include "log.h"
+#include "player.h"
+#include "builders.h"
 #include "inout.h"
 
 class QueryHandler : public InOut {
