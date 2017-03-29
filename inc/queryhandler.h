@@ -1,4 +1,5 @@
-#pragma once
+#ifndef QUERYHANDLER_H
+#define QUERYHANDLER_H
 #include <cctype>
 #include "player.h"
 #include "builders.h"
@@ -21,3 +22,5 @@ private:
     QueryHandler& operator= (QueryHandler const&) = delete;
     ~QueryHandler();
 };
+
+#endif

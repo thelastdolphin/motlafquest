@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BUILDERS_H
+#define BUILDERS_H
 #include "player.h"
 
 class WarriorBuilder : public PlayerBuilder {
@@ -36,3 +37,5 @@ public:
     void buildHitPoints();
     void buildActionPoints();
 };
+
+#endif

@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef AGREEMENTS_H
+#define AGREEMENTS_H
 typedef unsigned int AttributeValue;
 //typedef unsigned int PriceValue;
 
@@ -12,3 +12,5 @@ enum class PlayerClasses {
     ROGUE,
     MAGE
 };
+
+#endif

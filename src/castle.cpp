@@ -18,7 +18,8 @@ Castle& Castle::Instance(int CastleSZ){
 void Castle::showRooms(){
     std::vector<Room> Corridor(CastleSize);
     for (int i=0; i<CastleSize; i++){
-        std::cout << Corridor[i].number << std::endl;
+		Corridor[i].number=i;
+        std::cout << Corridor[i].number << " ";
     }
 }
 

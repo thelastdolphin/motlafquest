@@ -26,9 +26,4 @@ protected:
     static void ioPleaseEnter(char chosenVariant) noexcept;
 };
 
-
-
-
-
-
 #endif // INOUT_H

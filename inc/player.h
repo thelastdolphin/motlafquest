@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
 #include <memory>
 #include <iostream>
 #include "agreements.h"
@@ -57,3 +58,5 @@ public:
 private:
     PlayerBuilder* playerBuilder_;
 };
+
+#endif

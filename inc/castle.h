@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CASTLE_H
+#define CASTLE_H
 //#include <list>
 #include <vector>
 #include <iostream> // TEMP
@@ -14,7 +15,7 @@ private:
 public:
     Room();
     ~Room();
-    unsigned int number = 3; // TEMP
+    unsigned int number; // TEMP
     unsigned int getRoomNumber(Room *);
 };
 
@@ -48,3 +49,5 @@ public:
     MagicCastle();
 };
 */
+
+#endif
