@@ -1,11 +1,8 @@
-#include "inout.h"
+#include "../inc/inout.h"
 
 InOut::InOut(){
-
 }
 InOut::~InOut(){
-
-
 }
 
 int InOut::ioGetOk() { // temp

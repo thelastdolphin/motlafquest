@@ -1,8 +1,8 @@
-#include "castle.h"
-#include "player.h"
-#include "builders.h"
-#include "inout.h"
-#include "queryhandler.h"
+#include "../inc/castle.h"
+#include "../inc/player.h"
+#include "../inc/builders.h"
+#include "../inc/inout.h"
+#include "../inc/queryhandler.h"
 
 
 

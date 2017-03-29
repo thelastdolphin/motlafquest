@@ -1,4 +1,4 @@
-#include "castle.h"
+#include "../inc/castle.h"
 
 Room::Room(){}
 Room::~Room(){}

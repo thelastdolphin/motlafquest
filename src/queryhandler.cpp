@@ -1,4 +1,4 @@
-#include "queryhandler.h"
+#include "../inc/queryhandler.h"
 
 QueryHandler::QueryHandler(){
     //Input * InEx = InEx->execInputSys();

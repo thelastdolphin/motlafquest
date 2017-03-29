@@ -1,3 +1,3 @@
-#include "agreements.h"
+#include "../inc/agreements.h"
 
 // dummy file for correct making
