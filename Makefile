@@ -1,9 +1,13 @@
 CC=g++
 CXXFLAGS= -c -g -Wall -std=c++14 
 LDFLAGS=
-SOURCES=~/Git/motlafquest/src/*.cpp
-OBJECTS=~/Git/motlafquest/*.o
+SOURCES=./src/*.cpp
+OBJECTS=*.o
 TARGET=motlafquest
+
+
+clean: $(TARGET)
+	rm -rf *.o
 
 $(TARGET): castle.o player.o builders.o inout.o queryhandler.o main.o
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $(TARGET)
@@ -26,5 +30,3 @@ player.o:
 castle.o:
 	$(CC) $(CXXFLAGS) ./src/castle.cpp
 
-clean:
-	rm -rf *.o
