@@ -2,7 +2,6 @@
 //#include <list>
 #include <vector>
 #include <iostream> // TEMP
-#include "log.h"
 
 class Room {
 private:

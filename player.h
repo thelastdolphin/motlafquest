@@ -1,7 +1,7 @@
 #pragma once
-#include "agreements.h"
-#include "log.h"
 #include <memory>
+#include <iostream>
+#include "agreements.h"
 
 class Player {
 // Product

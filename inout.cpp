@@ -5,6 +5,7 @@ InOut::InOut(){
 }
 InOut::~InOut(){
 
+
 }
 
 int InOut::ioGetOk() { // temp

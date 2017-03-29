@@ -2,10 +2,9 @@
 #include "player.h"
 
 class WarriorBuilder : public PlayerBuilder {
-// Concrete Builder
+
 public:
-    WarriorBuilder() : PlayerBuilder() {
-    }
+    WarriorBuilder() : PlayerBuilder() {}
     ~WarriorBuilder(){}
     void buildStrength();
     void buildAgility();

@@ -7,12 +7,6 @@ Castle::Castle(int size): CastleSize(size) {
 }
 
 Castle::~Castle(){
-    /*
-    Log * DestroyCastleLog = new Log;
-    std::string ClassName = "Castle";
-    DestroyCastleLog->Ldestroy(ClassName);
-    delete DestroyCastleLog;
-    */
 }
 
 

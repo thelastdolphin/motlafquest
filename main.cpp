@@ -1,9 +1,10 @@
-#include "player.h"
 #include "castle.h"
+#include "player.h"
+#include "builders.h"
 #include "inout.h"
 #include "queryhandler.h"
-#include "builders.h"
-#include "castle.h"
+
+
 
 /* 1.Создание персонажа
  * 2.Отображение стартовых параметров
@@ -20,9 +21,7 @@
 int main(void) {
     // 0
     QueryHandler&  MainGame = QueryHandler::Instance();
-    //Input * InEx = InEx->execInputSys();
-    //OutputSys * Out = Out->execOutputSys();
-    Castle &CastleExmp = Castle::Instance(10); // no need in deleting, Singleton pattern
+    Castle &CastleExmp = Castle::Instance(10); 
     // 1
     MainGame.ioMainMenu();
     MainGame.ioGetAnswer();
@@ -37,10 +36,5 @@ int main(void) {
 
     std::cout << "Good-bye!" << std::endl;
 
-    //delete Out;
-    //delete InEx;
-    //delete MainGame;
-    
     return 0;
 }
-
